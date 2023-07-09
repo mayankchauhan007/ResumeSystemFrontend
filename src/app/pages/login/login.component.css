@@ -12,7 +12,6 @@ form{
     
 }
 mat-card{
-    background-image: url("../../../assets/bubbles.jpg");
     background-size: cover;
 }
 h1{

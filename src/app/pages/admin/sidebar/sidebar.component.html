@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-action-list>
+        <div mat-subheader > Menu </div>
+        <button mat-list-item routerLink="/admin/profile"> <mat-icon matListItemIcon >account_circle</mat-icon>  Profile </button>
+        <button mat-list-item routerLink="/admin/posts"> <mat-icon matListItemIcon >list </mat-icon>  Posts </button>
+        <button mat-list-item routerLink="/admin/add-post"> <mat-icon matListItemIcon >add_circle_outline </mat-icon>  Add Post </button>
+        <!-- <button mat-list-item routerLink="/admin/quizzes"> <mat-icon matListItemIcon >quiz</mat-icon> Quizzes </button>
+        <button mat-list-item routerLink="/admin/add-quiz"> <mat-icon matListItemIcon >add</mat-icon> Add Quiz </button> -->
+        <button mat-list-item (click)="logout()"> <mat-icon matListItemIcon >logout</mat-icon> Logout </button>
+    </mat-action-list>
+</mat-card>

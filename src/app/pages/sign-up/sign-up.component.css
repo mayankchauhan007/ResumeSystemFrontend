@@ -10,7 +10,6 @@ img{
 form{
     box-shadow: 0 0 40px rgb(8 7 16 / 60%);
     padding: 20px;
-    background-image: url("../../../assets/bubbles.jpg");
     background-size: cover;
 }
 h1{

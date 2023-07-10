@@ -33,8 +33,8 @@ const routes: Routes = [
     canActivate:[AdminGuard],
     children:[
       {
-        path:'profile',
-        component:ProfileComponent,
+        path:'',
+        component:ViewPostsComponent,
       },
       {
         path:'posts',

@@ -3,12 +3,13 @@ import { PostService } from 'src/app/services/post.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-user-dashboard',
-  templateUrl: './user-dashboard.component.html',
-  styleUrls: ['./user-dashboard.component.css']
+  selector: 'app-user-sidebar',
+  templateUrl: './user-sidebar.component.html',
+  styleUrls: ['./user-sidebar.component.css']
 })
-export class UserDashboardComponent {
+export class UserSidebarComponent {
   constructor(private _post:PostService){}
+  
   
   posts: any;
 

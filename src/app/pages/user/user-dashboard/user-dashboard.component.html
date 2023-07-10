@@ -1,1 +1,66 @@
-<H1>This is user dashboard </H1>
+<!-- <mat-card>
+    <h1 class="text-center"><b> All Posts </b></h1>
+    <mat-list>
+        
+        <mat-list-item *ngFor="let c of categories">
+            <mat-icon matListItemIcon>folder</mat-icon>
+                <div matListItemTitle>{{c.title}}</div>
+                <div matListItemLine>{{c.description}}</div>
+                <br>
+        </mat-list-item>
+    </mat-list>
+
+    <div class="container text-center mt20 mb20">
+        <button mat-raised-button routerLink="/admin/add-post" color="accent">Add New Post</button>
+    </div>
+</mat-card> -->
+<div class="bootstrap-wrapper">
+    <div class="container-fluid">
+
+        <h1 class="text-center mt10"> <b> Available Posts </b></h1>
+
+        <div class="row" *ngIf="posts">
+            
+            <div class="col-md-4 mt10" *ngFor="let q of posts">
+                <mat-card class="mt10" >
+                    <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>
+                           <h2>
+                            {{q.title}}
+                           </h2>
+                        </mat-card-title>
+                    </mat-card-header>
+                
+                    <mat-card-content>
+                        <p class="truncate">{{q.description}}</p>
+                    </mat-card-content>
+
+                    <mat-card-actions>
+                        <!-- <button mat-raised-button color="primary">View</button>
+                        <button mat-raised-button [routerLink]="'/user-dashboard/instructions/' + q.qid " class="ml10" color="accent" >Start</button>
+                        <button mat-button class="ml10" color="accent">Questions: {{q.numberOfQuestions}}</button>
+                        <button mat-button class="ml10" color="accent">Max Marks {{q.maxMarks}}</button> -->
+                        <!-- <button mat-raised-button class="ml10" color="accent" (click)="deleteQuiz(q.id)" > Delete </button> -->
+
+                    </mat-card-actions>
+
+
+                </mat-card>
+                <!-- <div class="container text-center mt20">
+                    <button mat-raised-button color="accent" routerLink="/admin/add-quiz"> Add New Quiz</button>
+                </div> -->
+
+            </div>
+
+        </div>
+        <div class="col-md-12 no-quizzes" *ngIf="posts!= null  && posts.length ==0">
+            <mat-card>
+                <mat-card-content>
+                    <h1>No Quiz in this Category</h1>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

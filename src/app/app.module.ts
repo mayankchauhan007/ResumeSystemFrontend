@@ -26,6 +26,7 @@ import { ProfileComponent } from './pages/admin/profile/profile.component';
 import { MatListModule } from '@angular/material/list';
 import { ViewPostsComponent } from './pages/admin/view-posts/view-posts.component';
 import { AddPostsComponent } from './pages/admin/add-posts/add-posts.component';
+import { UserSidebarComponent } from './pages/user/user-sidebar/user-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AddPostsComponent } from './pages/admin/add-posts/add-posts.component';
     SidebarComponent,
     ProfileComponent,
     ViewPostsComponent,
-    AddPostsComponent
+    AddPostsComponent,
+    UserSidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -15,4 +15,7 @@ export class PostService {
   public addPost(post:any){
     return this._http.post(baseUrl+"/posts", post);
   }
+  public deletePost(id:any){
+    return this._http.delete(`${baseUrl}/posts/${id}`);
+  }
 }
